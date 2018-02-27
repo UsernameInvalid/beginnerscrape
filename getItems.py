@@ -4,7 +4,7 @@ def getItems(soup):
 
     array = [itemNames, itemPrices]
 
-    for i in range(len(array)):
-        for j in range(len(array[i])):
-            array[i][j] = array[i][j].text
+    for column in range(len(array)):
+        for row in range(len(array[column])):
+            array[column][row] = array[column][row].text
     return itemNames, itemPrices

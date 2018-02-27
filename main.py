@@ -1,8 +1,10 @@
 from bs import soupify
 from getItems import getItems
 import csv
+import time
 
-f = csv.writer(open('results.csv', 'w', newline=''))
+
+f = csv.writer(open('results_'+time.strftime('%d-%b-%Y-%M') + '.csv', 'w', newline=''))
 f.writerow(['buyer', 'price'])
 
 
